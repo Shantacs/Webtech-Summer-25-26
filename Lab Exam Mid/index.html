@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="container">
+ 
+    <h2>Student Registration Form</h2>
+ 
+    <form id="studentForm">
+ 
+        <label>First Name <span class="required">*</span></label>
+        <input type="text" id="firstName">
+        <span id="firstNameError" class="error"></span>
+ 
+        <label>Last Name <span class="required">*</span></label>
+        <input type="text" id="lastName">
+        <span id="lastNameError" class="error"></span>
+ 
+        <label>Student ID <span class="required">*</span></label>
+        <input type="text" id="studentId">
+        <span id="studentIdError" class="error"></span>
+ 
+        <label>Email <span class="required">*</span></label>
+        <input type="text" id="email">
+        <span id="emailError" class="error"></span>
+ 
+        <label>Credit Completed <span class="required">*</span></label>
+        <input type="number" id="credit">
+        <span id="creditError" class="error"></span>
+ 
+        <label>Department <span class="required">*</span></label>
+        <select id="department">
+            <option value="">Select Department</option>
+            <option>CSE</option>
+            <option>CS</option>
+            <option>BBA</option>
+            <option>EEE</option>
+            <option>ENG</option>
+        </select>
+        <span id="departmentError" class="error"></span>
+ 
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+ 
+    </form>
+ 
+    <h2>Registered Students</h2>
+ 
+    <table id="studentTable">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Credit</th>
+            <th>Department</th>
+        </tr>
+    </table>
+ 
+</div>
+ 
+<script src="script.js"></script>
+ 
+</body>
+</html>
+ 

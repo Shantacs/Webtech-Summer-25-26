@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lab5script.js"></script>
+</head>
+<body>
+ 
+    <fieldset>
+        <legend>Payment Page</legend>
+        <form onsubmit="return collectData()">
+            <table>
+                <tr>
+                    <td>Device Name:</td>
+                    <td><input id="name" type="text"> </td>
+                    <td><span id="nameerror"></span></td>
+                </tr>
+                <tr>
+                    <td>Device Price:</td>
+                    <td><input id="price" type="text" onkeyup="calculateAmount()"> </td>
+                    <td><span id="priceerror"></span></td>
+                </tr>
+                <tr>
+                    <td>Device Quantity:</td>
+                    <td><input id="quantity" type="text" onkeyup="getQuantity()"> </td>
+                    <td><span id="quantityerror"></span></td>
+                </tr>
+                <tr>
+                    <td>Payable Amount:</td>
+                    <td><input id="amount" type="text" readonly style="display:none;"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="submit" type="submit" style="display:none;"> </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+ 
+</body>
+</html>
+ 
